@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecto - Aldeias Históricas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+</head>
+
+<body class="container-fluid md">
+    <!-- Header -->
+    <header>
+        <div id="header" class="header">
+            <img src="imagens/castle.svg" height="70" />
+            <h1>Projeto - Aldeias Históricas</h1>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+        <div class="container-fluid">
+            <!-- Logo e Titulo do Nav-->
+            <div class="navbar-brand">
+                <img src="imagens/castle.svg" height="30" />
+                <a href="Pagina_Inicial.html" class="navbar-brand">
+                    <span class="navbar-title">Registo</span>
+                </a>
+            </div>
+            <!-- Logo e Titulo do Nav-->
+
+            <!-- Botão Hamburguer-->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Botão Hamburguer-->
+
+            <!-- Nav Principal-->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <!-- Pagina Principal-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pagina_Inicial.html">Página Inicial</a>
+                    </li>
+                    <!-- Pagina Principal-->
+                    <!-- dropwdown menu-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#">
+                            Aldeias Históricas
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="almeida.html" class="dropdown-item"> Almeida</a>
+                            <a href="Castelo_Rodrigo.html" class="dropdown-item"> Castelo Rodrigo</a>
+                            <a href="Linhares_Beira.html" class="dropdown-item"> Linhares da Beira</a>
+                            <a href="Marialva.html" class="dropdown-item"> Marialva</a>
+                            <a href="Monsanto.html" class="dropdown-item"> Monsanto</a>
+                        </div>
+                        <!-- dropwdown menu-->
+                    </li>
+                </ul>
+
+                <!-- nav-items lado direito-->
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#login">Login</a>
+                    <a href="Registo.html" class="nav-item nav-link active" class="nav-item nav-link">Registo</a>
+
+                </div>
+                <!-- nav-items lado direito-->
+            </div>
+            <!-- Nav Principal-->
+        </div>
+    </nav>
+    <!-- Nav -->
+
+    <!-- Modal Login-->
+    <div class="modal fade" id="login" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginLable">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Username
+                    <input type="text" name="name" class="form-control d-inline" style="width: 200px" />
+                    <br />
+                    <br />
+                    Password
+                    <input type="password" name="name" class="form-control d-inline" style="width: 200px" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Login-->
+
+
+    <!-- Text body-->
+    <main>
+        <div class="slideimg">
+            <div>
+                <h1>Registo</h1>
+                <form action="">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td class="legenda">
+                                <label for="nome">Nome*</label>
+                            </td>
+                            <td class="controlo">
+                                <input type="text" id="text" class="form-control" style="width: 400px" minlength="6"
+                                    maxlength="20" placeholder="Defina o seu Nome" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="legenda">
+                                <label for="email">Email*</label>
+                            </td>
+                            <td class="controlo">
+                                <input type="email" id="email" class="form-control" style="width: 400px"
+                                    placeholder="Defina o seu E-mail" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="legenda">
+                                <label for="nome">Password*</label>
+                            </td>
+                            <td class="controlo">
+                                <input type="password" id="password" class="form-control" style="width: 400px"
+                                    minlength="6" maxlength="15" placeholder="Defina a sua Password" required />
+                            </td>
+                        </tr>
+                        <tr style="height: 80px">
+                            <td class="legenda"></td>
+                            <td class="controlo">
+                                <input type="submit" value="Registar" class="btn btn-primary" style="width: 300px" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- Text body-->
+
+    <!-- Footer -->
+    <footer>
+        <div class="md-2">
+            <div id="footer" class="footer">
+                <h3 class="footertext">
+                    Rúben Castro - 2023
+                </h3>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+</body>
+</body>
+
+</html>

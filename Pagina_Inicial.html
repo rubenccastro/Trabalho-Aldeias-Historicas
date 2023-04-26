@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecto - Aldeias Históricas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+</head>
+
+<body class="container-fluid md">
+    <!-- Header -->
+    <header>
+        <div id="header" class="header">
+            <img src="imagens/castle.svg" height="70" />
+            <h1>Projeto - Aldeias Históricas</h1>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+        <div class="container-fluid">
+            <!-- Logo e Titulo do Nav-->
+            <div class="navbar-brand">
+                <img src="imagens/castle.svg" height="30" />
+                <a href="Pagina_Inicial.html" class="navbar-brand">
+                    <span class="navbar-title">Aldeias Históricas</span>
+                </a>
+            </div>
+            <!-- Logo e Titulo do Nav-->
+
+            <!-- Botão Hamburguer-->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Botão Hamburguer-->
+
+            <!-- Nav Principal-->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <!-- Pagina Principal-->
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="Pagina_Inicial.html">Página Inicial</a>
+                    </li>
+                    <!-- Pagina Principal-->
+                    <!-- dropwdown menu-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                            Aldeias Históricas
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="almeida.html" class="dropdown-item"> Almeida</a>
+                            <a href="Castelo_Rodrigo.html" class="dropdown-item"> Castelo Rodrigo</a>
+                            <a href="Linhares_Beira.html" class="dropdown-item"> Linhares da Beira</a>
+                            <a href="Marialva.html" class="dropdown-item"> Marialva</a>
+                            <a href="Monsanto.html" class="dropdown-item"> Monsanto</a>
+                        </div>
+                    </li>
+                    <!-- dropwdown menu-->
+                </ul>
+
+                <!-- nav-items lado direito-->
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#login">Login</a>
+                    <a href="Registo.html" class="nav-item nav-link" class="nav-item nav-link">Registo</a>
+
+                </div>
+                <!-- nav-items lado direito-->
+            </div>
+            <!-- Nav Principal-->
+        </div>
+    </nav>
+    <!-- Nav -->
+
+    <!-- Modal Login-->
+    <div class="modal fade" id="login" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginLable">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Username
+                    <input type="text" name="name" class="form-control d-inline" style="width: 200px" />
+                    <br />
+                    <br />
+                    Password
+                    <input type="password" name="name" class="form-control d-inline" style="width: 200px" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Login-->
+
+
+    <!-- Text body-->
+    <main>
+        <div class="row slideimg">
+            <div class="col-md-8">
+
+                <div class="carousel slide carousel-fade" id="carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="almeida.html"><img src="Imagens/almeida/almeida1.jpg" alt=""
+                                    class="w-100 d-block"></a>
+                            <div class="carousel-caption d-none d-md-block carouselblock">
+                                <a href="almeida.html" class="text-decoration-none">
+                                    <h5 class="text-white text-center carouseltitle">Almeida</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="Castelo_Rodrigo.html"><img src="Imagens/castelo rodrigo/castelo_rodrigo1.jpg"
+                                    alt="" class="w-100 d-block"></a>
+                            <div class="carousel-caption d-none d-md-block carouselblock">
+                                <a href="Castelo_Rodrigo.html" class="text-decoration-none">
+                                    <h5 class="text-white text-center carouseltitle">Castelo Rodrigo</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="Linhares_Beira.html"><img src="Imagens/linhares da beira/linhares1.jpg" alt=""
+                                    class="w-100 d-block"></a>
+                            <div class="carousel-caption d-none d-md-block carouselblock">
+                                <a href="Linhares_Beira.html" class="text-decoration-none">
+                                    <h5 class="text-white text-center carouseltitle">Linhares</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="Marialva.html"><img src="Imagens/marialva/marialva1.jpg" alt=""
+                                    class="w-100 d-block"></a>
+                            <div class="carousel-caption d-none d-md-block carouselblock">
+                                <a href="Marialva.html" class="text-decoration-none">
+                                    <h5 class="text-white text-center carouseltitle">Marialva</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="Monsanto.html"><img href="" src="Imagens/monsanto/monsanto1.jpg" alt=""
+                                    class="w-100 d-block"></a>
+                            <div class="carousel-caption d-none d-md-block carouselblock">
+                                <a href="Monsanto.html" class="text-decoration-none">
+                                    <h5 class="text-white text-center carouseltitle">Monsanto</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="youtube-container">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/kP2OtQrVm1o"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Text body-->
+
+    <!-- Footer -->
+    <footer>
+        <div class="md-2">
+            <div id="footer" class="footer">
+                <h3 class="footertext">
+                    Rúben Castro - 2023
+                </h3>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>

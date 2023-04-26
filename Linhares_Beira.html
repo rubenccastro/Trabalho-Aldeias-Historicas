@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecto - Aldeias Históricas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+</head>
+
+<body class="container-fluid md">
+    <!-- Header -->
+    <header>
+        <div id="header" class="header">
+            <img src="imagens/castle.svg" height="70" />
+            <h1>Projeto - Aldeias Históricas</h1>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+        <div class="container-fluid">
+            <!-- Logo e Titulo do Nav-->
+            <div class="navbar-brand">
+                <img src="imagens/castle.svg" height="30" />
+                <a href="Pagina_Inicial.html" class="navbar-brand">
+                    <span class="navbar-title">Linhares da Beira</span>
+                </a>
+            </div>
+            <!-- Logo e Titulo do Nav-->
+
+            <!-- Botão Hamburguer-->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Botão Hamburguer-->
+
+            <!-- Nav Principal-->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <!-- Pagina Principal-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pagina_Inicial.html">Página Inicial</a>
+                    </li>
+                    <!-- Pagina Principal-->
+                    <!-- dropwdown menu-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#">
+                            Aldeias Históricas
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="almeida.html" class="dropdown-item"> Almeida</a>
+                            <a href="Castelo_Rodrigo.html" class="dropdown-item "> Castelo Rodrigo</a>
+                            <a href="Linhares_Beira.html" class="dropdown-item active"> Linhares da Beira</a>
+                            <a href="Marialva.html" class="dropdown-item"> Marialva</a>
+                            <a href="Monsanto.html" class="dropdown-item"> Monsanto</a>
+                        </div>
+                        <!-- dropwdown menu-->
+                    </li>
+                    <!-- Referencias-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#historia">História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Chegar">Como Chegar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Parapente">Parapente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Ver">O Que Ver</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Ficar">Onde Ficar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Comer">Onde Comer</a>
+                    </li>
+                    <!-- Referencias-->
+                </ul>
+
+                <!-- nav-items lado direito-->
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#login">Login</a>
+                    <a href="Registo.html" class="nav-item nav-link" class="nav-item nav-link">Registo</a>
+
+                </div>
+                <!-- nav-items lado direito-->
+            </div>
+            <!-- Nav Principal-->
+        </div>
+    </nav>
+    <!-- Nav -->
+
+    <!-- Modal Login-->
+    <div class="modal fade" id="login" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginLable">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Username
+                    <input type="text" name="name" class="form-control d-inline" style="width: 200px" />
+                    <br />
+                    <br />
+                    Password
+                    <input type="password" name="name" class="form-control d-inline" style="width: 200px" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Login-->
+
+
+    <!-- Text body-->
+    <main>
+        <div class="row slideimg">
+            <div class="col-md-8">
+                <h1 class="titles">Linhares da Beira</h1>
+                <p>Aldeia medieval do século XII, Linhares da Beira possui uma diversidade arquitetónica e artística
+                    ímpar,
+                    fruto do legado de várias épocas. Em 1169, recebeu o seu primeiro foral, atribuído por D. Afonso
+                    Henriques. Mas só mais tarde, no reinado de D. Dinis, foi erigido o seu imponente Castelo, ex-líbris
+                    da
+                    aldeia e principal cartão de visita nos nossos dias. Deambular pelas ruas desta aldeia museu é fazer
+                    uma
+                    incursão ao passado, à sua história, e sentir a brisa do Vale do Mondego a acariciar-nos o rosto.
+
+                </p>
+                <div class="carousel slide carousel-fade" id="carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Imagens/linhares da beira/linhares1.jpg" alt="" class="w-100 d-block">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagens/linhares da beira/linhares2.jpg" alt="" class="w-100 d-block">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagens/linhares da beira/linhares3.jpg" alt="" class="w-100 d-block">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagens/linhares da beira/linhares4.jpg" alt="" class="w-100 d-block">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagens/linhares da beira/linhares5.jpg" alt="" class="w-100 d-block">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagens/linhares da beira/linhares6.jpg" alt="" class="w-100 d-block">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    </button>
+                </div>
+                <div id="historia">
+                    <h1 class="titles">História</h1>
+                    <p>Vila de fundação medieval, com foral concedido em 1169 por D. Afonso Henriques, que, em 1855
+                        perde
+                        este estatuto com a reforma administrativa liberal. Apesar do local ter conhecido a fixação de
+                        povos
+                        pré-romanos e existir registo escrito da passagem de romanos, visigodos e muçulmanos, a história
+                        de
+                        Linhares, tem origem no contexto gerado com a reconquista Cristã. Estabilizadas as fronteiras do
+                        reino português, Linhares continuou a ter significado estratégico pelo menos até ao século XVII,
+                        pois fazia parte do sistema defensivo que guardava a Bacia do Mondego, na retaguarda das
+                        fortificações da raia beirã.
+
+                        A estrutura de ocupação do espaço da antiga vila de Linhares conjuga assim um tipo
+                        característico de
+                        povoamento medieval (séculos XII-XIV), com desenvolvimentos significativos no período
+                        quinhentista
+                        (século XVI). Nesta centúria a vila terá atingido uma configuração próxima da atual, ainda que
+                        no
+                        património edificado pesem, pelo impacto no tecido urbano, algumas construções mais tardias
+                        (séculos
+                        XVII-XIX).
+
+                        O castelo, implantado num cabeço rochoso a cerca de 820 m de altitude e dominando o Vale do
+                        Mondego,
+                        constitui o núcleo gerador do aglomerado. Na encosta, sobranceira à várzea de Linhares e cruzada
+                        por
+                        antiga via romana, estendeu-se a povoação: o sistema fortificado, entregue a um alcaide e
+                        dispondo
+                        de pequena guarnição militar, defendia um território bem como a sua população e bens; o foral,
+                        concedido pelo Rei, prescrevia a autonomia concelhia e organizava a vida económica e social do
+                        povoado; a Igreja estabeleceu as paróquias.
+
+                        A vila descreve, no sopé do Castelo, um perímetro triangular, em cujos vértices se situam três
+                        espaços ordenadores da malha urbana: o Lg. da Misericórdia, à entrada da povoação; o Lg. de S.
+                        Pedro, na zona denominada “Cimo da Vila”; e o Lg. da Igreja, próximo do Castelo e no acesso ao
+                        Campo
+                        da Corredoura, terreno de usufruto comum. Estes largos definiram-se em torno de igrejas - hoje
+                        desaparecida a de S. Pedro - e constituíam o centro das paróquias de fundação medieval. Na base
+                        do
+                        triângulo e no ponto oposto à Matriz, localiza-se o Lg. do Pelourinho, outrora o centro cívico
+                        da
+                        Vila.
+
+                        Da assistência ao peregrino, pobres e doentes sobra-nos o edifício do Lg. da Misericórdia, que
+                        acolheu duas instituições típicas da sociedade medieval e moderna - a Albergaria e o Hospital.
+                        Também do abastecimento de água, temos para observar três fontes dos séculos XII, XVI e XIX.
+                        Além da
+                        casa tradicional e popular disseminada por toda a vila, contam-se as casas nobres dos séculos
+                        XVIII-XIX, destacando-se janelas e portas decoradas ao gosto Manuelino (século XVI), quase
+                        sempre
+                        moradias de proprietários agrícolas mais abastados ou da burguesia local ligada ao comércio.
+                        Entre
+                        estes encontrava-se a comunidade judaica, minoria étnica e religiosa obrigada a viver apartada
+                        da
+                        comunidade cristã e cujo bairro - judiaria - se situava numa transversal à Rua Direita: sobre a
+                        porta de acesso ao bairro (Arco) figura uma das mais elaboradas janelas manuelinas de Linhares.
+
+
+                    </p>
+                </div>
+                <div class="youtube-container">
+                    <iframe class="youtube-video" width="560" height="315"
+                        src="https://www.youtube.com/embed/iiCRaFJv2jk" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div id="Chegar">
+                    <h1 class="titles">Como Chegar</h1>
+                    <div class="youtube-container">
+                        <iframe class="youtube-video"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48510.978343431496!2d-7.450179349999998!3d40.54299985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3cdd3f82f9f4e5%3A0x7faab870f7247bd7!2sLinhares!5e0!3m2!1sen!2spt!4v1673796777627!5m2!1sen!2spt"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div id="Parapente">
+                    <h1 class="titles">Parapente</h1>
+                    <a href="https://www.facebook.com/people/Escola-Aventura-Linhares-da-Beira/100069733926326/">Escola
+                        Aventura Linhares da Beira</a>
+                    <img src="imagens/linhares da beira/linhares5.jpg" alt="LinharesBeira5" class="w-100">
+                </div>
+                <div id="Ver">
+                    <h1 class="titles">O que Ver</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="card col" style="width: 18rem;">
+                                <img class="card-img-top" src="Imagens/linhares da beira/rascunho-automatico-706.jpg"
+                                    alt="">
+                                <div class="card-body">
+                                    <h5 class="subtitles">Fonte de Mergulho e Fórum</h5>
+                                    <p>Construção em pedra, que exibe as armas do município, era o local de reunião da
+                                        assembleia de homens bons de Linhares, onde se tomavam as decisões de carácter
+                                        administrativo, legislativo e judicial, conferindo sentido à individualidade
+                                        governativa do concelho. Nestas assembleias os oficiais e homens bons de
+                                        Linhares
+                                        agiriam em conformidade com o texto da carta de foral que Linhares havia
+                                        recebido. O
+                                        mais antigo foral foi concedido por D. Afonso Henriques em 1169 e seguia o
+                                        modelo
+                                        dos forais de Salamanca. No início do século XVI, D. Manuel procedeu à conhecida
+                                        reforma dos forais e Linhares recebeu uma nova carta, datada de 1510. O espaço
+                                        de
+                                        reunião, dito «fórum», monumento verdadeiramente singular no nosso país, está
+                                        situado no "Largo do Pelourinho" e exibe uma construção granítica à qual se
+                                        acede
+                                        por três degraus. No interior encontra-se uma mesa rodeada de bancos corridos,
+                                        vendo-se por detrás o brasão de Linhares. Este espaço chegou a estar envolvido
+                                        por
+                                        uma armação em madeira, coberta com telha, para melhor proteger os homens que aí
+                                        deliberavam. É interessante verificar que está assente sob uma nascente de água,
+                                        com
+                                        abertura em arco quebrado, apresentando no seu interior uma cobertura em
+                                        abóbada.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img class="card-img-top" src="Imagens/linhares da beira/rascunho-automatico-517.jpg"
+                                    alt="">
+                                <div class="card-body">
+                                    <h5 class="subtitles">Castelo de Linhares</h5>
+                                    <p>Integrado no sistema defensivo beirão, foi construído a mais de 800 m de
+                                        altitude,
+                                        num terreno desnivelado e rochoso. Existia já com D. Sancho I e foi reformado
+                                        por D.
+                                        Dinis em 1291. Apresenta 2 recintos amuralhados, 2 torres, 4 portas e 2
+                                        cisternas,
+                                        tendo sido intervencionado a partir dos anos 40. Trata-se de uma construção
+                                        imponente, integrada na linha de fortalezas da região beirã. Esta importante
+                                        estratégia defensiva foi sendo construída desde os tempos do Fundador da
+                                        dinastia
+                                        para proteger o flanco leste do território de possíveis investidas inimigas.
+                                        Deste
+                                        vasto conjunto de castelos podem ser mencionados os de Marialva, Moreira de Rei,
+                                        Trancoso, Celorico da Beira, entre outros. O Castelo de Linhares, Monumento
+                                        Nacional
+                                        desde 1922, exibe duas torres, a de Menagem e a Torre do relógio. O circuito
+                                        interior envolvido pelas muralhas está dividido em dois espaços fechados: um
+                                        deles,
+                                        a Oeste, de maior dimensão, pode ter funcionado como ponto de apoio à torre de
+                                        Menagem, sendo, portanto uma zona militar onde estão localizadas as cisternas;
+                                        já o
+                                        outro, a Este, serviu de resguardo das populações da vila e dos bens essenciais
+                                        à
+                                        sobrevivência em caso de cerco ou de ataques inimigos. Dotado de um longo
+                                        perímetro
+                                        amuralhado por onde se estendem os adarves, ou caminhos de ronda a descoberto, e
+                                        as
+                                        escadas de acesso.</p>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img class="card-img-top"
+                                    src="Imagens/linhares da beira/antiga-casa-da-camara-e-cadeia-3.jpg" alt="">
+                                <div class="card-body">
+                                    <h5 class="subtitles">Antiga Casa da Câmara e Cadeia</h5>
+                                    <p>Edifício de dois pisos, ornamentado com as armas de D. Maria (1777-1816),
+                                        encontra-se
+                                        enquadrado pelas outras construções municipais como o fórum e o pelourinho. Nos
+                                        tempos medievos terá funcionado como cadeia, como se comprova pela grade da
+                                        janela
+                                        inferior esquerda. Construção de dois pisos, abrindo o térreo, no seu interior,
+                                        para
+                                        um átrio com dois compartimentos laterais, e ascendendo-se por dois planos de
+                                        escadas ao andar superior. Neste último, existe um salão nobre e mais dois
+                                        compartimentos. Foi escola e residência de professores e, nos dias de hoje,
+                                        alberga
+                                        as instalações da Junta de Freguesia de Linhares, tendo como recheio algumas
+                                        peças
+                                        decorativas de interesse histórico.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Ficar">
+                    <h1 class="titles">Onde Ficar</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="card col" style="width: 18rem;">
+                                <img class="card-img-top" src="Imagens/linhares da beira/rascunho-automatico-228.jpg"
+                                    alt="">
+                                <div class="card-body">
+                                    <h5 class="subtitles">INATEL Linhares da Beira Hotel Rural</h5>
+                                    <p>
+
+                                        Linhares, Aldeia Histórica do concelho de Celorico da Beira, é um autêntico
+                                        museu ao
+                                        ar livre. Num ambiente de paisagem de montanha onde o granito é rei, recortada
+                                        por
+                                        ribeiros e levadas de água cristalina, surge o imponente Solar de Linhares.
+                                        Dispõe
+                                        de 26 quartos totalmente equipados, bar, piscina, campo de ténis, sala de
+                                        reuniões e
+                                        Wi-Fi. Parque de estacionamento privativo.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card col" style="width: 18rem;">
+                                <img class="card-img-top" src="Imagens/linhares da beira/Foto-Perfil.jpg" alt="">
+                                <div class="card-body">
+                                    <h5 class="subtitles">Casas do Durão</h5>
+                                    <p>
+                                        Estamos localizados na aldeia de Lajeosa do Mondego, com uma situação geográfica
+                                        privilegiada para visitar a maioria das Aldeias Históricas de Portugal.
+
+                                        Datada de 1764, a casa principal disponibiliza 2 quartos de casal e 2 suites,
+                                        tendo
+                                        vários espaços comuns, nomeadamente sala de leitura e televisão, sala de
+                                        refeições,
+                                        terraço e pátio no exterior com esplanada, forno a lenha, lagar de vinho, latada
+                                        e
+                                        zona para churrasco.
+
+                                        Além desta casa, disponibilizamos mais 2 casas independentes e autónomas que
+                                        têm,
+                                        cada uma delas, 2 quartos, casa de banho, sala e cozinha.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Comer">
+                    <h1 class="titles">Onde Comer</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="card col" style="width: 18rem;">
+                                <img class="card-img-top" src="Imagens/linhares da beira/cova-da-loba-2.jpg" alt="">
+                                <div class="card-body">
+                                    <h5 class="subtitles">Cova da Loba</h5>
+                                    <p>Espaço requintado, a combinar o rústico com o contemporâneo, onde se serve comida
+                                        regional elaborada na perfeição. Sob a alçada do Chef Valdir Lobav, delicie-se
+                                        com
+                                        os produtos locais e da época.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Text body-->
+
+    <!-- Footer -->
+    <footer>
+        <div class="md-2">
+            <div id="footer" class="footer">
+                <h3 class="footertext">
+                    Rúben Castro - 2023
+                </h3>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+</body>
+</body>
+
+</html>
